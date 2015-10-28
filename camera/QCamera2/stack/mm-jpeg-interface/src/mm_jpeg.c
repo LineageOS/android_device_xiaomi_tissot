@@ -1314,6 +1314,32 @@ OMX_ERRORTYPE mm_jpeg_session_config_thumbnail(mm_jpeg_job_session_t* p_session)
         p_thumb_dim->crop.top = p_main_dim->crop.top;
       }
     }
+    //Thumb FOV should be within main image FOV
+    if (p_thumb_dim->crop.left < p_main_dim->crop.left) {
+      p_thumb_dim->crop.left = p_main_dim->crop.left;
+    }
+
+    if (p_thumb_dim->crop.top < p_main_dim->crop.top) {
+      p_thumb_dim->crop.top = p_main_dim->crop.top;
+    }
+
+    while ((p_thumb_dim->crop.left + p_thumb_dim->crop.width) >
+      (p_main_dim->crop.left + p_main_dim->crop.width)) {
+      if (p_thumb_dim->crop.left == p_main_dim->crop.left) {
+        p_thumb_dim->crop.width = p_main_dim->crop.width;
+      } else {
+        p_thumb_dim->crop.left = p_main_dim->crop.left;
+      }
+    }
+
+    while ((p_thumb_dim->crop.top + p_thumb_dim->crop.height) >
+      (p_main_dim->crop.top + p_main_dim->crop.height)) {
+      if (p_thumb_dim->crop.top == p_main_dim->crop.top) {
+        p_thumb_dim->crop.height = p_main_dim->crop.height;
+      } else {
+        p_thumb_dim->crop.top = p_main_dim->crop.top;
+      }
+    }
   } else if ((p_thumb_dim->dst_dim.width > p_thumb_dim->src_dim.width) ||
     (p_thumb_dim->dst_dim.height > p_thumb_dim->src_dim.height)) {
     LOGE("Incorrect thumbnail dim %dx%d resetting to %dx%d", p_thumb_dim->dst_dim.width,
