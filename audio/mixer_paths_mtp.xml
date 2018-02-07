@@ -99,6 +99,7 @@
     <ctl name="DEC3 MUX" value="ZERO" />
     <ctl name="DEC4 MUX" value="ZERO" />
     <ctl name="SpkrMono VISENSE Switch" value="0" />
+    <ctl name="ADC1_INP1 Switch" value="0" />
 
     <!--MAX98927 Smart PA-->
     <ctl name="DRE EN" value="1" />
@@ -1115,6 +1116,7 @@
     <path name="adc1">
         <ctl name="ADC1 Volume" value="6" />
         <ctl name="DEC1 MUX" value="ADC1" />
+        <ctl name="ADC1_INP1 Switch" value="1" />
     </path>
 
     <path name="adc2">
