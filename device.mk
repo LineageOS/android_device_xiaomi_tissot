@@ -72,6 +72,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshims_skia
+
 # Update engine
 PRODUCT_PACKAGES += \
     brillo_update_payload \

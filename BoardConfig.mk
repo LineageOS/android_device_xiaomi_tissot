@@ -32,5 +32,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 55087422464 # 25765059584 - 16384
 # Root Folders
 BOARD_ROOT_EXTRA_FOLDERS := dsp firmware persist
 
+# Shims
+TARGET_LD_SHIM_LIBS := /system/vendor/lib/hw/camera.msm8953.so|libshims_skia.so
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/tissot/BoardConfigVendor.mk
