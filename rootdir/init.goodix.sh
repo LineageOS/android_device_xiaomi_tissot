@@ -1,4 +1,6 @@
-# Copyright (c) 2009-2012, 2014-2017, The Linux Foundation. All rights reserved.
+#! /vendor/bin/sh
+
+# Copyright (c) 2009-2016, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -25,34 +27,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on boot
-
-    # add for goodix 
-    chown system system /dev/goodix_fp
-    chmod 0644 /dev/goodix_fp
-    
-
-    # add for fpc 
-    chown system system /sys/devices/soc/soc:fpc1020/compatible_all
-    chmod 0664 /sys/devices/soc/soc:fpc1020/compatible_all
-    chown system system /sys/devices/soc/soc:fpc1020/irq
-    chmod 0660 /sys/devices/soc/soc:fpc1020/irq
-    chown system system /sys/devices/soc/soc:fpc1020/hw_reset
-    chmod 0660 /sys/devices/soc/soc:fpc1020/hw_reset
-    chown system system /sys/devices/soc/soc:fpc1020/wakeup_enable
-    chmod 0660 /sys/devices/soc/soc:fpc1020/wakeup_enable
-    chown system system /sys/devices/soc/soc:fpc1020/fingerdown_wait
-    chmod 0660 /sys/devices/soc/soc:fpc1020/fingerdown_wait
-
-
-on property:sys.fp.vendor=goodix
-   setprop ro.boot.fpsensor goodix
-   setprop persist.sys.fp.vendor goodix
-
-on property:sys.fp.vendor=FPC
-   setprop ro.boot.fpsensor fpc
-
-service goodix_script /vendor/bin/init.goodix.sh
-    class late_start
-    user root
-    oneshot
+if [ ! -f /data/system/users/0/settings_fingerprint.xml ]; then
+    rm -rf /persist/data/finger_*
+fi

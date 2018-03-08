@@ -70,6 +70,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    init.goodix.sh \
     init.tissot.rc
 
 # Sensors
