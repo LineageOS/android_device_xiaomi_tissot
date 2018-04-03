@@ -17,12 +17,12 @@ LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 LOCAL_C_INCLUDES+= $(kernel_includes)
 
 LOCAL_C_INCLUDES += \
-    hardware/libhardware/include/hardware \
-    system/media/camera/include \
-    system/media/private/camera/include \
     $(LOCAL_PATH)/../ \
-    $(LOCAL_PATH)/../../stack/mm-camera-interface/inc \
+    $(LOCAL_PATH)/../../stack/mm-camera-interface/inc
 
+LOCAL_HEADER_LIBRARIES := libhardware_headers
+LOCAL_HEADER_LIBRARIES += libbinder_headers
+LOCAL_HEADER_LIBRARIES += libandroid_sensor_headers
 
 LOCAL_SRC_FILES := \
     QCameraHAL3Base.cpp \
@@ -34,7 +34,9 @@ LOCAL_SRC_FILES := \
     QCameraHAL3Test.cpp
 
 
-LOCAL_SHARED_LIBRARIES:= libutils libcamera_client liblog libcamera_metadata libcutils
+LOCAL_SHARED_LIBRARIES:= libutils liblog libcamera_metadata libcutils
+
+LOCAL_STATIC_LIBRARIES := android.hardware.camera.common@1.0-helper
 
 LOCAL_32_BIT_ONLY := $(BOARD_QTI_CAMERA_32BIT_ONLY)
 

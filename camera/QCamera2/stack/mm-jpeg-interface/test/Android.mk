@@ -18,20 +18,19 @@ endif
 # System header file path prefix
 LOCAL_CFLAGS += -DSYSTEM_HEADER_PREFIX=sys
 
-OMX_HEADER_DIR := frameworks/native/include/media/openmax
 OMX_CORE_DIR := $(MM_JPEG_TEST_PATH)/../../../../mm-image-codec
 
 LOCAL_C_INCLUDES := $(MM_JPEG_TEST_PATH)
 LOCAL_C_INCLUDES += $(MM_JPEG_TEST_PATH)/../inc
 LOCAL_C_INCLUDES += $(MM_JPEG_TEST_PATH)/../../common
 LOCAL_C_INCLUDES += $(MM_JPEG_TEST_PATH)/../../mm-camera-interface/inc
-LOCAL_C_INCLUDES += $(OMX_HEADER_DIR)
 LOCAL_C_INCLUDES += $(OMX_CORE_DIR)/qexif
 LOCAL_C_INCLUDES += $(OMX_CORE_DIR)/qomx_core
 
 LOCAL_C_INCLUDES+= $(kernel_includes)
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
 
+LOCAL_HEADER_LIBRARIES := media_plugin_headers
 LOCAL_SRC_FILES := mm_jpeg_test.c
 
 LOCAL_32_BIT_ONLY := $(BOARD_QTI_CAMERA_32BIT_ONLY)
@@ -62,20 +61,19 @@ endif
 # System header file path prefix
 LOCAL_CFLAGS += -DSYSTEM_HEADER_PREFIX=sys
 
-OMX_HEADER_DIR := frameworks/native/include/media/openmax
 OMX_CORE_DIR := $(MM_JPEG_TEST_PATH)/../../../../mm-image-codec
 
 LOCAL_C_INCLUDES := $(MM_JPEG_TEST_PATH)
 LOCAL_C_INCLUDES += $(MM_JPEG_TEST_PATH)/../inc
 LOCAL_C_INCLUDES += $(MM_JPEG_TEST_PATH)/../../common
 LOCAL_C_INCLUDES += $(MM_JPEG_TEST_PATH)/../../mm-camera-interface/inc
-LOCAL_C_INCLUDES += $(OMX_HEADER_DIR)
 LOCAL_C_INCLUDES += $(OMX_CORE_DIR)/qexif
 LOCAL_C_INCLUDES += $(OMX_CORE_DIR)/qomx_core
 
 LOCAL_C_INCLUDES+= $(kernel_includes)
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
 
+LOCAL_HEADER_LIBRARIES := media_plugin_headers
 LOCAL_SRC_FILES := mm_jpegdec_test.c
 
 LOCAL_32_BIT_ONLY := $(BOARD_QTI_CAMERA_32BIT_ONLY)

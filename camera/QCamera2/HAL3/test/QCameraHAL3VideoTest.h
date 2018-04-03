@@ -32,9 +32,11 @@
 #include "QCameraHAL3Base.h"
 #include "QCameraHAL3Test.h"
 
+using namespace android;
 
 namespace qcamera {
 
+using ::android::hardware::camera::common::V1_0::helper::CameraMetadata;
 
 class QCameraHAL3VideoTest : public QCameraHAL3Test
 {
