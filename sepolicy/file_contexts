@@ -1,0 +1,8 @@
+# Block devices
+/dev/block/mmcblk0p27				u:object_r:persist_block_device:s0
+
+# Shell Script
+/(vendor|system/vendor)/bin/init\.goodix\.sh	u:object_r:init_fingerprint_exec:s0
+ 
+# Ir
+/dev/peel_ir					u:object_r:lirc_device:s0

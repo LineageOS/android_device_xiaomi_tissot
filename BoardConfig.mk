@@ -38,6 +38,9 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 # Root Folders
 BOARD_ROOT_EXTRA_FOLDERS := dsp firmware persist
 
+# Sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
 # Shims
 TARGET_LD_SHIM_LIBS := /system/vendor/lib/hw/camera.msm8953.so|libshims_skia.so
 
