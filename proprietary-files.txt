@@ -22,8 +22,6 @@ lib/libtrueportrait.so
 vendor/bin/mm-qcamera-daemon
 vendor/lib/hw/camera.msm8953.so
 vendor/lib/libFaceGrade.so
-vendor/lib/libFaceProc.so
-vendor/lib/libRecoFace.so
 vendor/lib/lib_lowlight.so
 vendor/lib/libarcsoft_beauty_shot.so
 vendor/lib/libarcsoft_beautyshot.so
@@ -100,6 +98,7 @@ vendor/lib/libseemore.so
 -vendor/lib/libts_detected_face_hal.so
 -vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libubifocus.so
+vendor/lib/libXMFD_AgeGender.so
 vendor/lib64/libmorpho_group_portrait.so
 vendor/lib64/libmorpho_panorama_gp.so
 
