@@ -34,6 +34,8 @@
 #include <dlfcn.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
 #include <linux/msm_ion.h>
 #define MMAN_H <SYSTEM_HEADER_PREFIX/mman.h>
 #include MMAN_H

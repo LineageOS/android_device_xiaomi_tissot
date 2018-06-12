@@ -31,6 +31,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <assert.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
 #define MMAN_H <SYSTEM_HEADER_PREFIX/mman.h>
 #include MMAN_H
 
