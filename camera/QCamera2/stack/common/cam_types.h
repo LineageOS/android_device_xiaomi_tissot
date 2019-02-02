@@ -51,7 +51,7 @@
 #define CEILING4(X)  (((X) + 0x0003) & 0xFFFC)
 #define CEILING2(X)  (((X) + 0x0001) & 0xFFFE)
 
-#define MAX_ZOOMS_CNT 91
+#define MAX_ZOOMS_CNT 101
 #define MAX_SIZES_CNT 40
 #define MAX_EXP_BRACKETING_LENGTH 32
 #define MAX_ROI 10
@@ -415,6 +415,7 @@ typedef enum {
     CAM_MAPPING_BUF_TYPE_CAPABILITY,  /* mapping camera capability buffer */
     CAM_MAPPING_BUF_TYPE_PARM_BUF,    /* mapping parameters buffer */
     /* this buffer is needed for the payload to be sent with bundling related cameras cmd */
+    XIAOMI,
     CAM_MAPPING_BUF_TYPE_SYNC_RELATED_SENSORS_BUF, /* mapping sync buffer.*/
 
     /* followings are per stream */
@@ -1049,6 +1050,7 @@ typedef struct {
         cam_coordinate_type_t coordinate[MAX_ROI];
         uint32_t aec_roi_idx[MAX_ROI];
     } cam_aec_roi_position;
+    uint16_t xiaomi_reserved;
 } cam_set_aec_roi_t;
 
 typedef struct {
@@ -2152,6 +2154,7 @@ typedef enum {
     /* parameters added for related cameras */
     /* fetch calibration info for related cam subsystem */
     CAM_INTF_PARM_RELATED_SENSORS_CALIBRATION,
+    XIAOMI_01,
     /* focal length ratio info */
     CAM_INTF_META_AF_FOCAL_LENGTH_RATIO,
     /* crop for binning & FOV adjust */
@@ -2170,6 +2173,7 @@ typedef enum {
     CAM_INTF_PARM_FLIP,
     /*Frame divert info from ISP*/
     CAM_INTF_BUF_DIVERT_INFO,
+    XIAOMI_02,
     /* Use AV timer */
     CAM_INTF_META_USE_AV_TIMER,
     CAM_INTF_META_EFFECTIVE_EXPOSURE_FACTOR,
@@ -2234,6 +2238,8 @@ typedef enum {
     CAM_INTF_META_SPOT_LIGHT_DETECT,
     /* HAL based HDR*/
     CAM_INTF_PARM_HAL_BRACKETING_HDR,
+    XIAOMI_03,
+    XIAOMI_04,
     CAM_INTF_PARM_MAX
 } cam_intf_parm_type_t;
 
