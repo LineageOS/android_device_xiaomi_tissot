@@ -10,27 +10,11 @@ vendor/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 
 # Camera
-etc/dualcamera.png
-etc/morpho_lowlight4.0.xml
-lib/libMiCameraHal.so
-lib/libmorpho_groupshot.so
-lib/libmorpho_memory_allocator.so
-lib/libmorpho_panorama.so
-lib/libmorphohht4.0.so
 vendor/bin/mm-qcamera-daemon
-vendor/lib/hw/camera.msm8953.so|1fe4587aaeca6627def22275d64b59322b48a0ed
-vendor/lib/libFaceGrade.so
-vendor/lib/lib_lowlight.so
-vendor/lib/libarcsoft_beauty_shot.so
-vendor/lib/libarcsoft_beautyshot.so
-vendor/lib/libarcsoft_beautyshot_image_algorithm.so
-vendor/lib/libarcsoft_beautyshot_video_algorithm.so
-vendor/lib/libarcsoft_dualcam_refocus.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/libmm-qcamera.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_dcrf.so
@@ -58,7 +42,6 @@ vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_imglib.so
-vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
@@ -71,24 +54,14 @@ vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmjpeg.so
-vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-vendor/lib/libmorpho_easy_hdr.so
-vendor/lib/libmorpho_group_portrait.so
-vendor/lib/libmorpho_hdr_checker.so
-vendor/lib/libmorpho_panorama_gp.so
-vendor/lib/libmpbase.so
-vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 -vendor/lib/libts_detected_face_hal.so|247470e7610f93b0a21d943f5e47ab61a032b1e0	
 -vendor/lib/libts_face_beautify_hal.so|4b8700003fd32f5a6a650821b86ed33e73992d10
-vendor/lib/libXMFD_AgeGender.so
-vendor/lib64/libmorpho_group_portrait.so
-vendor/lib64/libmorpho_panorama_gp.so
 
 # Camera actuators
 vendor/lib/libactuator_dw9763_ofilm_ov12a10.so
@@ -331,17 +304,6 @@ vendor/lib/libmmcamera_ov13880_eeprom.so
 vendor/lib/libmmcamera_ov5675_qtech.so
 vendor/lib/libmmcamera_qtech_ov5675_eeprom.so
 vendor/lib/libmmcamera_s5k5e8_ofilm.so
-
-# Camera Hidl (Untill we figure out xiaomi changes)
-vendor/bin/hw/android.hardware.camera.provider@2.4-service
-vendor/lib/camera.device@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 
 # Camera isp
 vendor/lib/libmmcamera_isp_sub_module.so
