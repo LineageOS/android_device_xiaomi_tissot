@@ -27,6 +27,7 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 
 # Kernel
+TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CONFIG := tissot_defconfig
 
 # Partitions
