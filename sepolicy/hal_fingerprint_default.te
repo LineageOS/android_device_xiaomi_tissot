@@ -7,7 +7,7 @@ set_prop(hal_fingerprint_default, fingerprint_prop);
 vndbinder_use(hal_fingerprint_default);
 
 allow hal_fingerprint_default gx_fpd_device:chr_file rw_file_perms;
-allow hal_fingerprint_default fpc_sysfs:dir rw_dir_perms;
+allow hal_fingerprint_default fpc_sysfs:dir r_dir_perms;
 allow hal_fingerprint_default fpc_sysfs:file rw_file_perms;
 allow hal_fingerprint_default fingerprintd_data_file:file create_file_perms;
 allow hal_fingerprint_default fingerprintd_data_file:dir rw_dir_perms;
