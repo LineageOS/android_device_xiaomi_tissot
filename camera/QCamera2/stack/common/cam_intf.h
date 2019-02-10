@@ -272,6 +272,8 @@ typedef struct{
     float hor_view_angle;                                   /* horizontal view angle */
     float ver_view_angle;                                   /* vertical view angle */
 
+    volatile char         xiaomi_reserved1[4];
+
     size_t preview_sizes_tbl_cnt;                           /* preview sizes table size */
     cam_dimension_t preview_sizes_tbl[MAX_SIZES_CNT];       /* preiew sizes table */
 
@@ -304,7 +306,6 @@ typedef struct{
     size_t supported_picture_fmt_cnt;
     cam_format_t supported_picture_fmts[CAM_FORMAT_MAX];
 
-    volatile char         xiaomi_reserved1[4];
     uint8_t max_downscale_factor;
 
     /* dimension and supported output format of raw dump from camif */
