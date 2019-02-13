@@ -18,9 +18,6 @@
 
 DEVICE_PATH := device/xiaomi/tissot
 
-# Camera
-TARGET_SUPPORT_HAL1 := false
-
 # Filesystem
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_USES_RECOVERY_AS_BOOT := true
