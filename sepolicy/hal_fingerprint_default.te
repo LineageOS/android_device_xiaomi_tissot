@@ -1,3 +1,5 @@
+typeattribute hal_fingerprint_default binder_in_vendor_violators, data_between_core_and_vendor_violators;
+
 type_transition hal_fingerprint_default system_data_file:{ dir file } gx_fpd_data_file;
 
 add_service(hal_fingerprint_default, goodix_fingerprint_vndservice);
