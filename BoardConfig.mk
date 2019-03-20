@@ -39,7 +39,7 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2019-01-05
+VENDOR_SECURITY_PATCH := 2019-02-05
 
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
