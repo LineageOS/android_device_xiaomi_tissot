@@ -102,3 +102,8 @@ PRODUCT_PACKAGES_DEBUG += \
 # Verity
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/system
 $(call inherit-product, build/target/product/verity.mk)
+
+# VNDK
+PRODUCT_PACKAGES += \
+    vndk_package \
+    libstdc++.vendor
