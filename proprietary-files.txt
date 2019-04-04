@@ -28,7 +28,7 @@ vendor/lib/libmmcamera2_mct_shimlayer.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_sensor_modules.so|253e2492eb4327c3cc11a68382bb0c0e29e7bbc9
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera_csidtg.so
@@ -278,17 +278,17 @@ vendor/lib/libchromatix_s5k5e8_ofilm_zsl_preview_3a.so
 vendor/lib/libchromatix_s5k5e8_ofilm_zsl_video_3a.so
 
 # Camera configs
-etc/camera/camera_config.xml
-etc/camera/csidtg_camera.xml
-etc/camera/csidtg_chromatix.xml
-etc/camera/ov12a10_arc_chromatix.xml
-etc/camera/ov12a10_arc_ofilm_chromatix.xml
-etc/camera/ov12a10_chromatix.xml
-etc/camera/ov13880_arc_chromatix.xml
-etc/camera/ov13880_arc_ofilm_chromatix.xml
-etc/camera/ov13880_chromatix.xml
-etc/camera/ov5675_qtech_chromatix.xml
-etc/camera/s5k5e8_ofilm_chromatix.xml
+etc/camera/camera_config.xml:vendor/etc/camera/camera_config.xml
+etc/camera/csidtg_camera.xml:vendor/etc/camera/csidtg_camera.xml
+etc/camera/csidtg_chromatix.xml:vendor/etc/camera/csidtg_chromatix.xml
+etc/camera/ov12a10_arc_chromatix.xml:vendor/etc/camera/ov12a10_arc_chromatix.xml
+etc/camera/ov12a10_arc_ofilm_chromatix.xml:vendor/etc/camera/ov12a10_arc_ofilm_chromatix.xml
+etc/camera/ov12a10_chromatix.xml:vendor/etc/camera/ov12a10_chromatix.xml
+etc/camera/ov13880_arc_chromatix.xml:vendor/etc/camera/ov13880_arc_chromatix.xml
+etc/camera/ov13880_arc_ofilm_chromatix.xml:vendor/etc/camera/ov13880_arc_ofilm_chromatix.xml
+etc/camera/ov13880_chromatix.xml:vendor/etc/camera/ov13880_chromatix.xml
+etc/camera/ov5675_qtech_chromatix.xml:vendor/etc/camera/ov5675_qtech_chromatix.xml
+etc/camera/s5k5e8_ofilm_chromatix.xml:vendor/etc/camera/s5k5e8_ofilm_chromatix.xml
 
 # Camera eeproms
 vendor/lib/libmmcamera_arc_ofilm_ov12a10_eeprom.so

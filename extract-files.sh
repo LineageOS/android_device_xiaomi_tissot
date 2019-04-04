@@ -13,6 +13,9 @@ function blob_fixup() {
         vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
             "${PATCHELF_0_8}" --remove-needed "libprotobuf-cpp-lite.so" "${2}"
             ;;
+	vendor/lib/libmmcamera2_sensor_modules.so)
+	    sed -i 's|/system/etc/camera/|/vendor/etc/camera/|g' "${2}"
+	    ;;
     esac
 }
 
