@@ -278,17 +278,17 @@ vendor/lib/libchromatix_s5k5e8_ofilm_zsl_preview_3a.so
 vendor/lib/libchromatix_s5k5e8_ofilm_zsl_video_3a.so
 
 # Camera configs
-etc/camera/camera_config.xml
-etc/camera/csidtg_camera.xml
-etc/camera/csidtg_chromatix.xml
-etc/camera/ov12a10_arc_chromatix.xml
-etc/camera/ov12a10_arc_ofilm_chromatix.xml
-etc/camera/ov12a10_chromatix.xml
-etc/camera/ov13880_arc_chromatix.xml
-etc/camera/ov13880_arc_ofilm_chromatix.xml
-etc/camera/ov13880_chromatix.xml
-etc/camera/ov5675_qtech_chromatix.xml
-etc/camera/s5k5e8_ofilm_chromatix.xml
+etc/camera/camera_config.xml:vendor/etc/camera/camera_config.xml
+etc/camera/csidtg_camera.xml:vendor/etc/camera/csidtg_camera.xml
+etc/camera/csidtg_chromatix.xml:vendor/etc/camera/csidtg_chromatix.xml
+etc/camera/ov12a10_arc_chromatix.xml:vendor/etc/camera/ov12a10_arc_chromatix.xml
+etc/camera/ov12a10_arc_ofilm_chromatix.xml:vendor/etc/camera/ov12a10_arc_ofilm_chromatix.xml
+etc/camera/ov12a10_chromatix.xml:vendor/etc/camera/ov12a10_chromatix.xml
+etc/camera/ov13880_arc_chromatix.xml:vendor/etc/camera/ov13880_arc_chromatix.xml
+etc/camera/ov13880_arc_ofilm_chromatix.xml:vendor/etc/camera/ov13880_arc_ofilm_chromatix.xml
+etc/camera/ov13880_chromatix.xml:vendor/etc/camera/ov13880_chromatix.xml
+etc/camera/ov5675_qtech_chromatix.xml:vendor/etc/camera/ov5675_qtech_chromatix.xml
+etc/camera/s5k5e8_ofilm_chromatix.xml:vendor/etc/camera/s5k5e8_ofilm_chromatix.xml
 
 # Camera eeproms
 vendor/lib/libmmcamera_arc_ofilm_ov12a10_eeprom.so
@@ -345,12 +345,11 @@ vendor/lib/libmmcamera_isp_gamma40.so
 vendor/lib64/hw/consumerir.default.so
 
 # Fingerprint
-lib64/hw/gf_fingerprint.default.so
-lib64/libgf_algo.so
-lib64/libgf_ca.so
-lib64/libgf_hal.so
-lib64/libgoodixfingerprintd_binder.so
-lib64/libsoftkeymaster.so
+lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.default.so
+lib64/libgf_algo.so:vendor/lib64/libgf_algo.so
+lib64/libgf_ca.so:vendor/lib64/libgf_ca.so
+lib64/libgf_hal.so:vendor/lib64/libgf_hal.so
+lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/permissions/com.fingerprints.extension.xml
