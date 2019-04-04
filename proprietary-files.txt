@@ -358,3 +358,6 @@ vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib64/hw/fingerprint.default.so
+
+# VNDK
+vendor/lib64/vndk/libbinder.so|33728907df610aae1fa3c3b8e7df836d40df0936
