@@ -70,6 +70,9 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Properties
+-include device/xiaomi/tissot/prop.mk
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.goodix.sh \
