@@ -352,7 +352,7 @@ lib64/libgf_hal.so
 lib64/libgoodixfingerprintd_binder.so
 lib64/libsoftkeymaster.so
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|abc854a21f603d23197e2ba8f64f03fb0244d7c4
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib64/com.fingerprints.extension@1.0.so
