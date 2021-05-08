@@ -1,3 +1,0 @@
-ctl.vendor.imsrcsd				u:object_r:vendor_ctl_vendor_imsrcsservice_prop:s0
-sys.fp.goodix					u:object_r:fingerprint_prop:s0
-sys.fp.vendor					u:object_r:fingerprint_prop:s0
