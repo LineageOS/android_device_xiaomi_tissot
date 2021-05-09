@@ -345,19 +345,17 @@ vendor/lib/libmmcamera_isp_gamma40.so
 vendor/lib64/hw/consumerir.default.so
 
 # Fingerprint
-lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.default.so|b09aba758c469f3e3ff04197a723a15fbdfafea1
+lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so|b09aba758c469f3e3ff04197a723a15fbdfafea1
 lib64/libgf_algo.so:vendor/lib64/libgf_algo.so
 lib64/libgf_ca.so:vendor/lib64/libgf_ca.so
 lib64/libgf_hal.so:vendor/lib64/libgf_hal.so
 lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|abc854a21f603d23197e2ba8f64f03fb0244d7c4
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|feee131f714ed9a7dd93e7ba9bfc768cbf651426
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|c9d0251df63d8e34b6d70a59ad7b774c9f640fa1
-vendor/lib64/hw/fingerprint.default.so
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.default.so
 
 # QC RIL - from Daisy QKQ1.191002.002 V11.0.5.0.QDLMIXM
 vendor/bin/hw/qcrild|c0db5589a45874c31c0bb7e8a7151511505c1e04
