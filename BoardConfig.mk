@@ -16,7 +16,7 @@
 TARGET_KERNEL_VERSION := 4.9
 
 # Inherit from common msm8953-common
--include device/xiaomi/msm8953-common/BoardConfigCommon.mk
+include device/xiaomi/msm8953-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/tissot
 
@@ -51,5 +51,5 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2020-05-05
 
-# Inherit from the proprietary version
--include vendor/xiaomi/tissot/BoardConfigVendor.mk
+# Inherit the proprietary files
+include vendor/xiaomi/tissot/BoardConfigVendor.mk
