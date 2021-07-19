@@ -357,6 +357,14 @@ vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|feee131f714ed9
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|c9d0251df63d8e34b6d70a59ad7b774c9f640fa1
 vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.default.so
 
+# Gatekeeper - from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
+vendor/lib/hw/gatekeeper.msm8953.so|cd04140788659ae07a50081baeb3eb2e42f37028
+vendor/lib64/hw/gatekeeper.msm8953.so|1086e5dcda7aa2bed7ac015f7850095f6199a1c2
+
+# Keystore - from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
+vendor/lib/hw/keystore.msm8953.so|c56d3768e04fc180d844dbca94be8c27770e37d5
+vendor/lib64/hw/keystore.msm8953.so|9660e1c13a3589114cf18db58e5b3c3c9e14059b
+
 # QC RIL - from Daisy QKQ1.191002.002 V11.0.5.0.QDLMIXM
 vendor/bin/hw/qcrild|c0db5589a45874c31c0bb7e8a7151511505c1e04
 vendor/etc/init/qcrild.rc|f9c32f5e7a8e7f4a0df1dcce174de169b8d7c060
