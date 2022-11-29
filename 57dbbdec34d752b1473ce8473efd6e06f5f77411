@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "997db130_eceaa53d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31933
+      },
+      "writtenOn": "2022-11-29T09:08:46Z",
+      "side": 1,
+      "message": "Update fingerprint to enable Google Familylink. With the old one Familylink does not work, as it expects a newer firmware.",
+      "revId": "57dbbdec34d752b1473ce8473efd6e06f5f77411",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
