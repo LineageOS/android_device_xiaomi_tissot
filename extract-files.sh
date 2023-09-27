@@ -16,6 +16,9 @@ function blob_fixup() {
 	vendor/lib/libmmcamera2_sensor_modules.so)
 	    sed -i 's|/system/etc/camera/|/vendor/etc/camera/|g' "${2}"
 	    ;;
+	vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so)
+            "${PATCHELF_0_8}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+	    ;;
     esac
 
     # For all ELF files
