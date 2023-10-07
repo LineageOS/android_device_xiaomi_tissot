@@ -40,7 +40,7 @@ vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libmmcamera_hdr_gb_lib.so
+vendor/lib/libmmcamera_hdr_gb_lib.so|f88c3c342c83e11642fceb2356b8f44a23b55e12
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
@@ -60,8 +60,8 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
--vendor/lib/libts_detected_face_hal.so|247470e7610f93b0a21d943f5e47ab61a032b1e0	
--vendor/lib/libts_face_beautify_hal.so|4b8700003fd32f5a6a650821b86ed33e73992d10
+-vendor/lib/libts_detected_face_hal.so|247470e7610f93b0a21d943f5e47ab61a032b1e0|356a49713693fa83d058e968c00d129d85c8acfb
+-vendor/lib/libts_face_beautify_hal.so|4b8700003fd32f5a6a650821b86ed33e73992d10|5b2ffbbd2b03eb4b1b98d89c04bdd3873db4bb7f
 
 # Camera actuators
 vendor/lib/libactuator_dw9763_ofilm_ov12a10.so
@@ -346,10 +346,10 @@ vendor/lib64/hw/consumerir.default.so
 
 # Fingerprint
 lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so|b09aba758c469f3e3ff04197a723a15fbdfafea1
-lib64/libgf_algo.so:vendor/lib64/libgf_algo.so
-lib64/libgf_ca.so:vendor/lib64/libgf_ca.so
-lib64/libgf_hal.so:vendor/lib64/libgf_hal.so
-lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so
+lib64/libgf_algo.so:vendor/lib64/libgf_algo.so|223fe4cd12e9d71f24b6a5daceb5aff054312366
+lib64/libgf_ca.so:vendor/lib64/libgf_ca.so|76dbed8211fbff5d88ab0bdb66a7f6ed12c3f2c2
+lib64/libgf_hal.so:vendor/lib64/libgf_hal.so|01a0a951f5defc023903b8ec6f27211adf8513fd
+lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so|028c098ce13d7de5d924d034f815fb640129dfdd
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib64/com.fingerprints.extension@1.0.so
