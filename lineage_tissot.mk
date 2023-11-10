@@ -12,6 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from tissot device
+AB_OTA_UPDATER := true
 TARGET_IS_LEGACY := true
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
