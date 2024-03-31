@@ -16,6 +16,23 @@
       "message": "Update fingerprint to enable Google Familylink. With the old one Familylink does not work, as it expects a newer firmware.",
       "revId": "57dbbdec34d752b1473ce8473efd6e06f5f77411",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ecd2aa9d_816ffe48",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33615
+      },
+      "writtenOn": "2024-03-31T23:55:01Z",
+      "side": 1,
+      "message": "Hi, this change is necessary to make Familylink work on this device, could this be merged on lineage-20 and lineage-21 branches ?",
+      "revId": "57dbbdec34d752b1473ce8473efd6e06f5f77411",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
